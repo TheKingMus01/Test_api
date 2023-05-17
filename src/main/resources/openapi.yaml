@@ -1,0 +1,16 @@
+openapi: 3.0.2
+info:
+  title: Hello World API
+  version: 1.0.0
+paths:
+  /api/hello:
+    get:
+      summary: Retrieves a greeting message
+      operationId: getGreeting
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
